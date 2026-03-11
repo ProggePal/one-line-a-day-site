@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support | One Line a Day</title>
+    <style>
+        :root {
+            --bg: #FAF9F6;
+            --text: #1A1A1A;
+            --accent: #C97D4E;
+            --secondary: #E5E1D8;
+            --white: #FFFFFF;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+        }
+
+        nav {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.25rem;
+            letter-spacing: -0.02em;
+            text-decoration: none;
+            color: var(--text);
+        }
+
+        header {
+            padding: 4rem 0 2rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: -0.04em;
+            margin-bottom: 1rem;
+        }
+
+        section {
+            padding: 2rem 0 4rem;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            font-weight: 700;
+            margin-bottom: 2rem;
+            letter-spacing: -0.02em;
+        }
+
+        .faq-item {
+            margin-bottom: 2.5rem;
+        }
+
+        .faq-item h3 {
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin-bottom: 0.75rem;
+            color: var(--text);
+        }
+
+        .faq-item p {
+            color: #444;
+        }
+
+        .contact-box {
+            background: var(--white);
+            padding: 2.5rem;
+            border-radius: 24px;
+            border: 1px solid rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        .contact-box h2 {
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-box p {
+            color: #666;
+            margin-bottom: 1.5rem;
+        }
+
+        .email-link {
+            display: inline-block;
+            color: var(--accent);
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 1.1rem;
+        }
+
+        .email-link:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            padding: 4rem 0;
+            border-top: 1px solid rgba(0,0,0,0.05);
+            text-align: center;
+        }
+
+        .footer-links {
+            margin-bottom: 1.5rem;
+        }
+
+        .footer-links a {
+            color: var(--text);
+            text-decoration: none;
+            margin: 0 1rem;
+            font-size: 0.9rem;
+            opacity: 0.6;
+        }
+
+        .footer-links a:hover {
+            opacity: 1;
+        }
+
+        .copyright {
+            font-size: 0.85rem;
+            color: #888;
+        }
+
+        @media (max-width: 600px) {
+            h1 { font-size: 2rem; }
+            .contact-box { padding: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="container">
+        <a href="index.html" class="logo">One Line a Day</a>
+    </nav>
+
+    <header class="container">
+        <h1>Support</h1>
+    </header>
+
+    <main class="container">
+        <section id="faq">
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="faq-item">
+                <h3>How do I export my entries?</h3>
+                <p>Go to the Profile tab, tap Export. You can copy the last 7 days, this week, this month, or all entries. For large exports, use the Share option to send as a text file via email or Files.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Can I edit a past entry?</h3>
+                <p>Entries are intentionally read-only after the day ends. This is by design — it preserves the honest, in-the-moment nature of the journal.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How does iCloud sync work?</h3>
+                <p>Your entries sync automatically across all your iPhones and iPads signed into the same iCloud account. No account needed — it just works.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do I delete all my data?</h3>
+                <p>Go to Profile → scroll to the bottom → tap Delete All Data. This permanently removes all entries from your device and iCloud. This cannot be undone.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>How do I restore my voice transcription purchase?</h3>
+                <p>Go to Profile → tap Restore Purchases. Your purchase is tied to your Apple ID and can be restored on any device signed with the same Apple ID.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>The voice transcription isn't working. What do I do?</h3>
+                <p>Make sure you've granted microphone and speech recognition permissions in Settings → Privacy. If the issue persists, contact us below.</p>
+            </div>
+
+            <div class="faq-item">
+                <h3>Is my data private?</h3>
+                <p>Yes. Your entries are stored only on your device and in your personal iCloud. We have no servers, no accounts, and never see your data. Read our full <a href="privacy.html" style="color: var(--accent); text-decoration: underline;">Privacy Policy</a>.</p>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="contact-box">
+                <h2>Still need help?</h2>
+                <p>We're a small team and we read every message.</p>
+                <a href="mailto:support@onelineaday.app" class="email-link">support@onelineaday.app</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="index.html">Home</a>
+                <a href="privacy.html">Privacy</a>
+            </div>
+            <p class="copyright">&copy; 2026 One Line a Day. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
